@@ -28,9 +28,10 @@ form {
 
 .items {
   position: fixed;
-  top: 50px;
+ 
   right: 30%;
   left: 30%;
+  bottom: 100px;
   border-radius: 8px;
 }
 
