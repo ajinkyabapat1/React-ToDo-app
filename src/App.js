@@ -6,12 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {TodoContext} from './Context/TaskContext';
 import  todoReducer from './Context/reducer';
+import TodoForm from './Component/TodoForm';
 const App=()=>{
   const [todos, dispatch]=useReducer(todoReducer);
   return (
     <TodoContext.Provider value={{todos,dispatch}}>
       <Container fluid>
         <h1>Todo app</h1>
+
+        <TodoForm></TodoForm>
       </Container>
 
     </TodoContext.Provider>
